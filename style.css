@@ -23,6 +23,7 @@ body {
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
   font-family: "Source Sans 3", sans-serif;
+  min-height: 100vh;
 }
 
 /* 6. Improve media defaults */
@@ -76,3 +77,25 @@ h6 {
 }
 
 /* MAIN STYLING */
+
+header,
+main,
+footer {
+  padding-inline: 1.25em;
+}
+
+header {
+  background-color: beige;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1rem;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 1rem;
+}

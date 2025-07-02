@@ -1,6 +1,13 @@
 import { blogArray } from "./data.js";
 
 const blog = document.getElementById("blog");
+const footer = document.getElementById("footer");
+const year = new Date().getFullYear();
+
+footer.innerHTML = `
+<p>My Learning Journal</p>
+<p>Copyright ©${year}</p>
+`;
 
 function renderBlog(blogArray) {
   const blogContent = blogArray

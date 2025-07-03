@@ -187,5 +187,46 @@ footer {
 }
 
 @media (min-width: 481px) {
-  
+  .blog-section {
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 1em;
+    grid-template-areas:
+      "card card"
+      "card card"
+      "card card";
+  }
+
+  .card {
+    grid-area: "card";
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+  }
+}
+
+@media (min-width: 769px) {
+  .blog-section {
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 1em;
+    grid-template-areas:
+      "card card card"
+      "card card card";
+    padding-inline: 2em;
+  }
+
+  .card {
+    grid-area: "card";
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+  }
+
+  header {
+    padding-inline: 2em;
+  }
+
+  /* Main Section */
+  .hero-section {
+    padding-inline: 2em;
+  }
 }

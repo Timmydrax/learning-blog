@@ -136,6 +136,15 @@ header nav ul a:hover {
   font-size: 2rem;
   font-weight: bold;
 }
+.hero-section button {
+  padding-block: 0.5rem;
+  border-radius: 0.25em;
+  height: 42px;
+  background-color: white;
+  color: #121212;
+  border: none;
+  cursor: pointer;
+}
 
 .blog-section {
   background-color: #fff;
@@ -201,6 +210,18 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 0.75em;
+  }
+
+  .hero-section button {
+    grid-area: butt;
+    width: 250px;
+    padding-block: 0.5rem;
+    border-radius: 0.25em;
+    height: 42px;
+    background-color: white;
+    color: #121212;
+    border: none;
+    cursor: pointer;
   }
 }
 
@@ -271,6 +292,6 @@ footer {
     background-color: white;
     color: #121212;
     border: none;
-    
+    cursor: pointer;
   }
 }

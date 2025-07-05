@@ -127,7 +127,7 @@ header nav ul a:hover {
 /* Main Section */
 .hero-section {
   color: #fff;
-  background: #0000004d url(assets/images/blog-image-hero.png);
+  background: #0000004d url(/assets/images/blog-image-hero.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

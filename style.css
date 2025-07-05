@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap");
+
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -22,7 +24,7 @@ body {
   line-height: 1.5;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Darker Grotesque", sans-serif;
   min-height: 100vh;
 }
 
@@ -153,7 +155,7 @@ header nav ul a:hover {
 }
 
 .blog-section {
-  background-color: #fff;
+  background-color: #fafafa;
   padding-inline: 1.25em;
   padding-block: 2em;
   display: grid;
@@ -306,4 +308,21 @@ footer {
     border: none;
     cursor: pointer;
   }
+}
+
+/* LEARN Page */
+
+/* Main Section */
+.hero-section-two {
+  color: #121212;
+  background: #fafafa;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-block-end: 1.25em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding-block-start: 2em;
+  padding-inline: 1.25em;
 }

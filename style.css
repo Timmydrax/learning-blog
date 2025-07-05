@@ -228,5 +228,49 @@ footer {
   /* Main Section */
   .hero-section {
     padding-inline: 2em;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      "empt"
+      "empt"
+      "span"
+      "head"
+      "para"
+      "butt";
+    /* row-gap: 1rem; */
+    padding-block-start: 3em;
+  }
+
+  .hero-section span,
+  .hero-section h1,
+  .hero-section p {
+    max-width: 657px;
+  }
+
+  .hero-section span {
+    grid-area: span;
+  }
+
+  .hero-section div {
+    grid-area: empt;
+  }
+
+  .hero-section h1 {
+    grid-area: head;
+  }
+  .hero-section p {
+    grid-area: para;
+  }
+
+  .hero-section button {
+    grid-area: butt;
+    width: 250px;
+    padding-block: 0.5rem;
+    border-radius: 0.25em;
+    height: 50px;
+    background-color: white;
+    color: #121212;
+    border: none;
+    
   }
 }

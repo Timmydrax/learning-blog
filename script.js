@@ -28,4 +28,4 @@ function renderBlog(blogArray) {
   return blogContent;
 }
 
-blog.innerHTML = renderBlog(blogArray);
+blog.innerHTML += renderBlog(blogArray);

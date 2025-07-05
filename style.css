@@ -21,7 +21,7 @@
 
 body {
   /* 4. Add accessible line-height */
-  line-height: 1.5;
+  line-height: 1.3;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
   font-family: "Darker Grotesque", sans-serif;
@@ -98,9 +98,18 @@ header nav ul {
   gap: 1rem;
 }
 
-header .logo {
-  max-width: 140px;
-  width: 100%;
+.logo a {
+  text-decoration: none;
+  color: steelblue;
+}
+
+.logo span {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
 }
 
 header nav ul a {
@@ -108,7 +117,7 @@ header nav ul a {
   color: #121212;
   padding-block-end: 0.25em;
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 0.825rem;
 }
 
 header nav ul a:hover {
@@ -248,9 +257,46 @@ footer {
   text-align: center;
 }
 
+/* About Section */
+
+.about-section {
+  padding-inline: 1.25em;
+  padding-block: 1.5em;
+  display: grid;
+  row-gap: 0.75em;
+}
+
+.about-section .image-container {
+  width: 182px;
+  height: auto;
+}
+
+.about-section .about-content {
+  max-width: 320px;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 481px) {
+  .about-section {
+    padding-inline: 1.25em;
+    padding-block: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "imgs cont cont cont";
+    gap: 0.75em;
+    align-items: center;
+  }
+
+  .about-section .image-container {
+    grid-area: imgs;
+    margin: 0;
+  }
+  .about-section .about-content {
+    grid-area: cont;
+    max-width: 800px;
+  }
+
   .blog-section {
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
     gap: 1em;
@@ -258,6 +304,14 @@ footer {
       "card card"
       "card card"
       "card card";
+  }
+
+  .logo span {
+    font-size: 1.5rem;
+  }
+
+  header nav ul a {
+    font-size: 1rem;
   }
 
   .card {
@@ -291,6 +345,22 @@ footer {
 }
 
 @media (min-width: 769px) {
+  .about-section {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-areas: "imgs imgs cont cont cont cont cont cont cont cont cont cont cont cont";
+    gap: 0.75em;
+    align-items: center;
+  }
+
+  .about-section .image-container {
+    grid-area: imgs;
+    margin: 0;
+  }
+  .about-section .about-content {
+    grid-area: cont;
+  }
+
   .blog-section {
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     gap: 1em;
